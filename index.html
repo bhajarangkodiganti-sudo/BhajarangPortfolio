@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <!-- Use a modern, easy-to-read font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Load Tailwind CSS from CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <!-- Main content card for the About Me section -->
+    <div class="bg-gray-800 p-8 md:p-12 rounded-2xl shadow-xl max-w-lg w-full flex flex-col items-center text-center transform transition-all duration-300 hover:scale-105">
+
+        <!-- Profile picture, using a placeholder image from placehold.co -->
+        <!-- You can replace this with your own image URL! -->
+        <img src="https://placehold.co/150x150/2d3748/f7fafc?text=Your+Photo" alt="Your Profile Photo" class="w-36 h-36 md:w-40 md:h-40 rounded-full mb-6 border-4 border-gray-600 shadow-lg">
+
+        <!-- Personal name and title -->
+        <h1 id="name" class="text-3xl md:text-4xl font-bold mb-2">Hello, I'm Kodiganti Bhajarang</h1>
+        <p class="text-base md:text-lg text-gray-400 mb-8">Aspiring Cloud Professional | Currently Learning AWS, Linux, DevOps | Python, SQL, JavaScript.</p>
+
+        <!-- A short bio section -->
+        <p class="text-sm md:text-base mb-6 max-w-prose leading-relaxed">
+            I enjoy building websites using HTML, CSS, and JavaScript, and I’m currently learning AWS services and DevOps tools to grow as a cloud engineer."
+        </p>
+
+        <!-- Social media links with Font Awesome icons -->
+        <div class="flex space-x-4 mb-8 text-gray-400">
+            <!-- Load Font Awesome for icons -->
+            <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+            <a href="#" class="hover:text-blue-500 transition-colors duration-300" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="#" class="hover:text-gray-300 transition-colors duration-300" aria-label="GitHub Profile">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="#" class="hover:text-blue-400 transition-colors duration-300" aria-label="Twitter Profile">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+        </div>
+
+        <!-- Section for key skills -->
+        <h2 class="text-xl md:text-2xl font-semibold mb-4 text-gray-200">My Skills</h2>
+        <ul class="list-none p-0 flex flex-wrap justify-center gap-4 text-sm md:text-base">
+            <li class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">HTML</li>
+            <li class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">CSS</li>
+            <li class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">JavaScript</li>
+            <li class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full">Python</li>
+        </ul>
+
+    </div>
+
+    <!-- Simple JavaScript to show it's working -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Website loaded successfully! You can add more functionality here.');
+            // A simple example of changing text dynamically
+            // const nameElement = document.getElementById('name');
+            // nameElement.textContent = "Hello, I'm a Developer!";
+        });
+    </script>
+</body>
+</html>
