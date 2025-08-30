@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Link to Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a clean, modern look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header Section -->
+    <header class="bg-white shadow-md rounded-b-xl p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Kodiganti Bhajarang</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="text-blue-600 hover:text-blue-800 transition duration-300">About</a></li>
+                    <li><a href="#projects" class="text-blue-600 hover:text-blue-800 transition duration-300">Projects</a></li>
+                    <li><a href="#contact" class="text-blue-600 hover:text-blue-800 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container mx-auto my-8 p-4">
+
+        <!-- About Section -->
+        <section id="about" class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-2xl font-bold mb-4">About Me</h2>
+            <p class="text-lg leading-relaxed">
+                Aspiring Cloud & DevOps professional focused on scalable, efficient solutions—currently 
+                sharpening skills in AWS, Linux, DevOps tools, and front-end fundamentals (HTML , CSS & JavaScript).
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-2xl font-bold mb-4">My Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project Card 1: Traffic Signal -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-xl font-semibold mb-2">My Portfolio</h3>
+                    <p class="text-gray-600 mb-4">
+                        This is a responsive "About My Portfolio" page built with HTML and CSS. It provides a clean, 
+                        single-page layout to display a user's profile, skills, and social media links.
+                    </p>
+                    <a href="https://github.com/bhajarangkodiganti-sudo/BhajarangPortfolio" class="text-blue-600 hover:text-blue-800 font-medium">View Project &rarr;</a>
+                </div>
+
+                <!-- Add more project cards here -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-xl font-semibold mb-2">Project Two</h3>
+                    <p class="text-gray-600 mb-4">
+                        Description of your next project.
+                    </p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">View Project &rarr;</a>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200">
+                    <h3 class="text-xl font-semibold mb-2">Project Three</h3>
+                    <p class="text-gray-600 mb-4">
+                        Description of your third project.
+                    </p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">View Project &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white rounded-xl shadow-lg p-8">
+            <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+            <p class="text-lg leading-relaxed">
+                Feel free to reach out to me! You can connect with me on social media or by email.
+            </p>
+            <div class="mt-4 flex space-x-4">
+                <a href="mailto:bhajarangkodiganti@gmail.com" class="text-blue-600 hover:text-blue-800 font-medium">Email</a>
+                <a href="https://github.com/bhajarangkodiganti-sudo" class="text-blue-600 hover:text-blue-800 font-medium">GitHub</a>
+                <a href="https://www.linkedin.com/in/kodiganti-bhajarang-9bb096252" class="text-blue-600 hover:text-blue-800 font-medium">LinkedIn</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-white shadow-inner rounded-t-xl mt-8 p-4 text-center">
+        <p class="text-gray-600">&copy; <span id="current-year"></span> Kodiganti Bhajarang. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
